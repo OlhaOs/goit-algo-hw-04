@@ -47,7 +47,7 @@ def insertion_sort(lst):
 
 def timer(sortf, data):
     start = timeit.default_timer()
-    sdata = sortf(data.copy()) 
+    sortf(data.copy()) 
     etime = timeit.default_timer() - start
     return len(data), etime
 
